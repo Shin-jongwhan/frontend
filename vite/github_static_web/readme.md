@@ -46,3 +46,35 @@ npm run deploy
 
 ### 이제 아래 주소로 홈페이지에 접속해본다.
 #### https://shin-jongwhan.github.io/cognimosyne/
+### <br/>
+
+## custom domain 설정
+### 먼저 도메인 호스팅 사이트에 접속해서 A record와 CNAME을 추가해줘야 한다.
+- A : @, 185.199.108.153
+- A : @, 185.199.109.153
+- A : @, 185.199.110.153
+- A : @, 185.199.111.153
+- CNAME : www, shin-jongwhan.github.io
+#### ![image](https://github.com/user-attachments/assets/95e61189-08c4-481c-b4fd-1538d3924755)
+### <br/><br/>
+
+### custom domain 설정
+### CNAME이라는 파일을 하나 만든다.
+#### ![image](https://github.com/user-attachments/assets/fcd38fef-eb8f-4021-8941-4a786a82af21)
+### github - pages 설정에서 custom domain을 입력하고 기다려야 한다.
+#### ![image](https://github.com/user-attachments/assets/1170da06-1fa5-4c51-a859-cfa18f1d0287)
+### <br/>
+
+### 다 되면 let's encrypt를 이용해 github에서 자동으로 SSL 설정을 해준다. 인증서 발급에 30분 정도 걸리며, 다 되면 HTTPS 버튼이 활성화된다.
+#### ![image](https://github.com/user-attachments/assets/c327aa57-deb3-4c1d-bbf9-df52d39495b7)
+### <br/><br/>
+
+## 주의 사항
+### windows일 경우 github 말고 직접 웹 앱을 개발하려고 했을 때 hosts 파일을 수정해야 하는데, 이걸 다시 꺼놔야 한다. 
+### 그래서 C:\Windows\System32\drivers\etc\hosts 파일에서 주석처리한다.
+```
+[IPv4 address] cognimosyne.com www.cognimosyne.com
+```
+### <br/>
+
+### 그 다음 브라우저에서 접속하려고 하면 접속이 여전히 안 될 수도 있는데, 브라우저 캐시를 비워야 한다.
