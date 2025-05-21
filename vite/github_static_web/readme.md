@@ -4,6 +4,10 @@
 ### 아래 주소로 하나 생성하였다.
 #### https://github.com/Shin-jongwhan/cognimosyne
 #### ![image](https://github.com/user-attachments/assets/10801d96-b2f7-432a-bbb4-686788b803a1)
+#### <br/>
+
+### github repo settings
+#### ![image](https://github.com/user-attachments/assets/3df46c04-f9cc-4cc8-89fb-b52175424859)
 ### <br/>
 
 ### 먼저 테스트 프로젝트를 하나 생성하였다. 아래 내용 참고.
@@ -34,6 +38,11 @@ git push -u origin main
 ### <br/>
 
 ### deploy
+#### 이 명령어는 git push를 하고나면 꼭 해줘야 한다.
 ```
 npm run deploy
 ```
+#### <br/>
+
+### 이제 아래 주소로 홈페이지에 접속해본다.
+#### https://shin-jongwhan.github.io/cognimosyne/
